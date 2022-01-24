@@ -15,5 +15,10 @@
       Submit link
     </button>
   </form><br><br>
-  <app-articlecomp class='card'></app-articlecomp>
+  <div class="container">
+    <!-- start adding here -->
+    <app-articlecomp *ngFor="let art of articles" [article]="art">
+    </app-articlecomp>
+    <!-- end adding here -->
+  </div>
 </div>

@@ -7,7 +7,7 @@ import { Article } from './articlecomp.model'; //Non cancellare gli altri import
   styleUrls: ['./articlecomp.component.css']
 })
 export class ArticlecompComponent implements OnInit {
-  @HostBinding('attr.class') cssClass = 'card';
+  @HostBinding('attr.class') cssClass = 'card mt-4';
   @Input() article:Article;
 
   constructor(){
